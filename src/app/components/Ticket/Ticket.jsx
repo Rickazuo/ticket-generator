@@ -10,9 +10,10 @@ export default function Ticket() {
     <main className={styles.main}>
       <div className={styles.container}>
         <Image
+          className={styles.backgroundTicket}
           src={backgroundTicket}
           alt="left background of ticket"
-          style={{ width: "100%", height: "100%" }}
+          layout="responsive"
         />
         <div className={styles.infosUserTicket}>
           <div className={styles.nameAndPhoto}>
@@ -20,8 +21,7 @@ export default function Ticket() {
               className={styles.photo}
               src={photo}
               alt="example of photo"
-              width={140}
-              height={128}
+              layout="responsive"
             />
             <span className={styles.crew}>Tripulante</span>
             <h3 className={styles.username}>Seu nome aqui</h3>
@@ -45,8 +45,7 @@ export default function Ticket() {
               className={styles.barcode}
               src={barcode}
               alt="image of barcode"
-              width={224}
-              height={16}
+              layout="responsive"
             />
           </div>
         </div>
