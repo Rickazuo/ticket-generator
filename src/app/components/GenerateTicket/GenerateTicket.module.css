@@ -34,6 +34,28 @@
   margin-bottom: 1rem;
 }
 
+.userSuccess {
+  display: none;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+
+  color: var(--gray-light, #f3f4fe);
+
+  /* Headline-20 */
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 2rem */
+  text-transform: uppercase;
+}
+
+.checkedUser {
+  max-width: 2rem;
+  max-height: 2rem;
+}
+
 .inputContainer {
   display: flex;
   position: relative;
@@ -59,6 +81,20 @@
   font-weight: 400;
   line-height: 160%;
   border: none;
+}
+
+.checkedFailedUser {
+  display: none;
+
+  color: var(--danger, #ff8f8f);
+
+  /* Text-18 */
+  font-family: Roboto;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 160%; /* 1.8rem */
+  margin-bottom: 1rem;
 }
 
 .buttonTicket {
