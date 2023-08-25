@@ -3,7 +3,6 @@ import styles from './page.module.css'
 import GenerateTicket from './components/GenerateTicket/GenerateTicket'
 import Ticket from './components/Ticket/Ticket'
 import { useState } from 'react'
-import fetchGitHubData from './service/github'
 
 export default function Home() {
 const [ticketData, setTicketData] = useState(null)
