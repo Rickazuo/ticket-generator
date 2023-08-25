@@ -35,7 +35,7 @@
 }
 
 .userSuccess {
-  display: none;
+  display: flex;
   align-items: center;
   gap: 0.5rem;
   width: 100%;
@@ -84,7 +84,7 @@
 }
 
 .checkedFailedUser {
-  display: none;
+  display: flex;
 
   color: var(--danger, #ff8f8f);
 
@@ -106,6 +106,7 @@
   width: 100%;
   background: var(--purple-normal, #8860e6);
   border: none;
+  cursor: pointer;
 
   color: var(--neutral-colors-white, #fff);
   text-align: center;
@@ -114,4 +115,8 @@
   font-weight: 700;
   line-height: normal;
   text-transform: uppercase;
+}
+
+.buttonTicket:hover {
+  filter: brightness(70%);
 }

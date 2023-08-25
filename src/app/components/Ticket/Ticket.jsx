@@ -5,7 +5,7 @@ import backgroundTicket from "../../../../public/backgroundTicket.svg";
 import photo from "../../../../public/photo.svg";
 import barcode from "../../../../public/barcode.svg";
 
-export default function Ticket() {
+export default function Ticket({ name, avatarUrl }) {
   return (
     <main className={styles.main}>
       <div className={styles.container}>
@@ -17,14 +17,25 @@ export default function Ticket() {
         />
         <div className={styles.infosUserTicket}>
           <div className={styles.nameAndPhoto}>
-            <Image
-              className={styles.photo}
-              src={photo}
-              alt="example of photo"
-              layout="responsive"
-            />
+            {avatarUrl ? (
+              <Image
+                className={styles.photo}
+                src={avatarUrl}
+                alt="photo of github user"
+                width={20}
+                height={20}
+                layout="responsive"
+              />
+            ) : (
+              <Image
+                className={styles.photo}
+                src={photo}
+                alt="example of photo"
+                layout="responsive"
+              />
+            )}
             <span className={styles.crew}>Tripulante</span>
-            <h3 className={styles.username}>Seu nome aqui</h3>
+            <h3 className={styles.username}>{name}</h3>
           </div>
           <div className={styles.eventInfo}>
             <ul>
